@@ -42,7 +42,7 @@ input::-webkit-inner-spin-button {
     display: inline-block;
     margin-top: 10px;
     margin-right: auto;
-    flex: auto;
+    flex: 1 1 auto;
 }
 #k_input, #xspeed_input, #lambda_input, #gamma_input, #addItems_input, #removeItems_input, #impulse_input {
     width: 24px;
@@ -65,7 +65,7 @@ input::-webkit-inner-spin-button {
     color: white;
     font-size: 30px;
     position: absolute;
-    bottom: 90px;
+    bottom: 120px;
 }
 #equations p{
     text-align: center;
