@@ -15,12 +15,21 @@ function updateG(newG){
     RS = CreateRS(N,K,G,L);
 }
 function addElems(number) {
-    for (let i = 0; i < number; i++) {q.elements.push(0,0); N++;}
+    for (let i = 0; i < number; i++) {
+        q.elements.push(0,0);
+        chart.addTrack(q,N);
+        N++;
+    }
     RS = CreateRS(N,K,G,L);
     width_px = Canvas.offsetWidth/N;
 }
 function removeElems(number) {
-    for (let i = 0; i < number; i++) { q.elements.pop(); q.elements.pop(); N--;}
+    for (let i = 0; i < number; i++) { 
+        q.elements.pop(); 
+        q.elements.pop();
+        chart.removeTrack(); 
+        N--;
+    }
     RS = CreateRS(N,K,G,L);
     width_px = Canvas.offsetWidth/N;
 }

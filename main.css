@@ -3,11 +3,11 @@
     padding: 0;
 }
 body {
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: black;
 }
 #canvas{
-    width: 100vw;
+    width: 99vw;
     height: 100vh;
 }
 #state {
@@ -29,7 +29,11 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
+input[type='number'] {
+    -moz-appearance: textfield;
+}
 .container{
+    padding: 10px;
     position: absolute;
     bottom: 20px;
     font-size: 30px;
@@ -75,3 +79,45 @@ mjx-container[jax="CHTML"][display="true"] {
     text-align: center;
     margin: 2em 0;
 }
+.chart_container{
+    width: 90vw;
+    height: 200px;
+    background: red;
+    margin: 0 auto;
+    display: block;
+    background: transparent;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-button {
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:6px;
+    height:0px
+    }
+    
+    ::-webkit-scrollbar-track {
+    background-color:#32312e;
+    box-shadow:0px 0px 3px #000 inset;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color:rgba(255, 0, 0, 0.281);
+    box-shadow:0px 1px 1px rgb(175, 139, 139) inset;
+    background-image:url('https://yraaa.ru/_pu/24/59610063.png');
+    background-position:center;
+    background-repeat:no-repeat;
+    }
+    
+    ::-webkit-resizer{
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:3px;
+    height:0px
+    }
+    
+    ::-webkit-scrollbar{
+    width: 8px;
+    }

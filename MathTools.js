@@ -1,5 +1,5 @@
 function RK(RS,q){
-    var h = 0.015;
+    var h = h_time;
     var k1 = RS(q)
     var k2 = RS(q.add(k1.multiply(h/2)))
     var k3 = RS(q.add(k2.multiply(h/2)))
