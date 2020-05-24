@@ -29,12 +29,13 @@ let myChart = function () {
 });  
 
 this.chart = chart;
-this.color = "rgba(255, 33, 0, 1)";
+this.color = "rgba(0, 0, 0, 1)";
 this.borderWidth = 1;
 this.update = function(){ chart.update()};
 this.addTrack = function(q,i){
   chart.data.datasets.push({
     radius: 0,
+    fill: false,
     label: `${i+1}`,
     data: new Array(Math.floor(t_window/h_time)).fill(q.elements[2*i+1]),
     borderColor: this.color,

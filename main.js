@@ -4,7 +4,7 @@ let Canvas = document.getElementById("canvas");
 ///////////////////////////
 PIXI.utils.skipHello(); 
 let app = new PIXI.Application({resizeTo:Canvas,
-    backgroundColor:0x000000,
+    backgroundColor:0xFFFFFF,
     antialias:true,
     view:Canvas});
 
@@ -27,7 +27,7 @@ let t_c = 0;
 let k_input = document.getElementById("k_input")
 let width_px = Canvas.offsetWidth/N;
 let path_pendulums = new PIXI.Graphics();
-path_pendulums.lineStyle(4, 0xFF3300, 1);
+path_pendulums.lineStyle(4, 0x000000, 1);
 app.stage.addChild(path_pendulums);
 let center_y = Canvas.offsetHeight/2;
 
@@ -49,7 +49,7 @@ function update(){
         t_c += h_time; 
         chart.updateTracks(q,t_c);
     }
-    path_pendulums.clear().lineStyle(4, 0xFF3300, 1);
+    path_pendulums.clear().lineStyle(4, 0x000000, 1);
     drawPendulums(N,q);
     chart.update();
 };
@@ -62,9 +62,9 @@ function drawPendulums(N,data){
 function drawPendulum(width,phase,index){
     let center_x = width/2 + index*width;
     let radius = width/2;
-    path_pendulums.lineStyle(2, 0xFF3300, 0.2);
+    path_pendulums.lineStyle(2, 0x000000, 0.2);
     path_pendulums.drawCircle(center_x,center_y,radius);
-    path_pendulums.lineStyle(4, 0xFF3300, 1);
+    path_pendulums.lineStyle(4, 0x000000, 1);
     path_pendulums.drawCircle(center_x + radius*Math.cos(phase),center_y +radius*Math.sin(phase),radius/8);
 };
 
