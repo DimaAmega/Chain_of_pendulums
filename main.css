@@ -78,6 +78,7 @@ mjx-container[jax="CHTML"][display="true"] {
     display: inline;
     text-align: center;
     margin: 2em 0;
+    color: black;
 }
 .chart_container{
     width: 90vw;
